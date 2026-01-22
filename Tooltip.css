@@ -16,3 +16,26 @@ body {
 .dot {
   color: grey;
 }
+
+.header-item {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  background-color: rgba(100, 100, 100, 0.5);
+  padding: 6px;
+  font-size: 24px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s;
+}
+
+.header-item:hover .tooltip {
+  opacity: 1;
+}
